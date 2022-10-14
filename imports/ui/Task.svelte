@@ -15,6 +15,15 @@
     };
 </script>
 
+<style>
+.is-complete {
+        /* Line cross the complete todo item */
+        text-decoration: line-through;
+        /* Mark the complete todo item in green */
+        color: green;
+    }
+</style>
+
 <li>
     <input
             type="checkbox"
@@ -22,6 +31,10 @@
             checked={!!task.isChecked}
             on:click={toggleChecked}
     />
-    <span>{ task.text }</span>
+    {#if task.isChecked}
+      <span class="is-complete">{ task.text }</span>
+    {:else}
+      <span>{ task.text }</span>
+    {/if}
     <button class="delete" on:click={deleteThisTask}>&times;</button>
 </li>

@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-image: linear-gradient(to bottom,#BBE1FA, #ED8D8D 100%);
   background-attachment: fixed;
 
   position: absolute;
@@ -41,6 +41,7 @@ button:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 
 .main {
@@ -48,7 +49,6 @@ button:focus {
   flex-direction: column;
   flex-grow: 1;
   overflow: auto;
-  background: white;
 }
 
 .main::-webkit-scrollbar {
@@ -59,10 +59,9 @@ button:focus {
 
 header {
   background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  background-image: linear-gradient(to bottom, #916BBF, #C996CC 100%);
   padding: 20px 15px 15px 15px;
   position: relative;
-  box-shadow: 0 3px 3px rgba(34, 25, 25, 0.4);
 }
 
 .app-bar {
@@ -79,7 +78,10 @@ header {
 
 .task-form {
   display: flex;
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 15%;
+  width: 70%;
 }
 
 .task-form > input {
@@ -106,16 +108,24 @@ header {
 .tasks {
   list-style-type: none;
   padding-inline-start: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-left: 15%;
+  margin-top: 10px;
+  width: 70%;
+  background-color: #C996CC;
+  border-radius: 15px;
 }
 
 .tasks > li {
   display: flex;
   padding: 16px;
-  border-bottom: #eee solid 1px;
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  align-items: center;
 }
 
 .tasks > li > span {
