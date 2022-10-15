@@ -8,15 +8,18 @@ Yida Chen
 
 # How to interact with the todo app
 
+1. Go to the page: [https://todo-app-meteor-chen.meteorapp.com/](https://todo-app-meteor-chen.meteorapp.com/) (Due to the cold run, it may take several minutes to load this page. Please be patient.)
+2. To add a new task, enter the description of your task at the top input box and click `Add Task` button.
+3. To mark a task as complete, check off the checkbox on the left of the task.
+4. To delete a task, click the red cross button on the right of the task.
+5. To hide the tasks that are complete, hit the `Hide Completed` button below the top input box. To show all tasks, hit the button again.
+6. The header of the app tells you how many of your tasks are still ongoing in the parentheses.
+
+Alternatively, you can build this project from source:  
 1. Install meteor on your machine: (1) for Linux and OS X: `curl https://install.meteor.com/ | sh` and (2) for Winodws, please first install Node.js ([link](https://nodejs.org/en/)), then run `npm install -g meteor`.
 2. Clone this project via `git clone`
 3. Go to the top directory of the project folder, run `meteor run`
 4. Open the todo app in your browser. The app is on `http://localhost:3000/`
-5. To add a new task, enter the description of your task at the top input box and click `Add Task` button.
-6. To mark a task as complete, check off the checkbox on the left of the task.
-7. To delete a task, click the red cross button on the right of the task.
-8. To hide the tasks that are complete, hit the `Hide Completed` button below the top input box. To show all tasks, hit the button again.
-9. The header of the app tells you how many of your tasks are still ongoing in the parentheses.
 
 # References
 The creation of this app using the source code from Python Engineer's tutorial "Python Flask Beginner Tutorial - Todo App," [https://svelte-tutorial.meteor.com/simple-todos/01-creating-app.html](https://svelte-tutorial.meteor.com/simple-todos/01-creating-app.html). 
